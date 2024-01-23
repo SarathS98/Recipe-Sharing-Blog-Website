@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'cssfiles/explore.css' %}">
+</head>
+<body class="bo">
+<div class=nav>
+        <div class="logo">
+            BiteBliss
+        </div>
+        <div class="hmebtn">
+            <ul>
+                <li><a href="{% url 'accnt' %}">PROFILE</a></li>
+                <li><a href="{% url 'prfpg' %}">SHARE RECIPE</a></li>
+                <li><a href="{% url 'hmepg' %}">LOG OUT</a></li>
+            </ul>
+        </div>
+</div>
+        <h3>{{ posts.title }}</h3>
+        <h2>{{ posts.description}}</h2>
+        <p>By: {{ posts.author }} on {{ posts.date_posted }}</p><br>
+<div>
+    {% if object.author == request.user %}
+        <form action="{% url 'post_update' posts.pk %}" method="post">
+            {% csrf_token %}
+            <button class="del">EDIT POST</button>
+        </form>
+    {% endif %}    
+    {% if object.author == request.user %}    
+        <form action="{% url 'post_delete' posts.pk %}" method="post">
+            {% csrf_token %}
+            <button class="del">DELETE</button>
+        </form>
+    {% endif %}
+</div>
+</body>
+</html>

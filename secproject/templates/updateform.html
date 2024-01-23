@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>profilepage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'cssfiles/stylepro.css' %}">
+    
+</head>
+<body class="bo">
+    <div class="nav">
+        <div class="logo">
+            BiteBliss
+        </div>
+        <div class="hmebtn">
+            <ul>
+                
+                <li><a href="{% url 'accnt' %}">PROFILE</a></li>
+                <li><a href="{% url 'explr' %}">EXPLORE</a></li>
+                <li><a href="{% url 'hmepg' %}">LOG OUT</a></li>
+            </ul>
+        </div>
+    </div>
+    <center>
+        <div>
+            <form name="regis" method="post" action="#">
+                
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Submit</button>
+            </form>
+                
+            </form>   
+        </div>
+    </center>\
+
+    
+    
+</body>
+</html>

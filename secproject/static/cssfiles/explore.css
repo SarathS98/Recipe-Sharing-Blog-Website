@@ -1,0 +1,60 @@
+.bo{
+    background-color: rgb(222, 217, 217);
+}
+
+.nav{
+    width:100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    color: rgb(230, 235, 83);
+    background-color: rgb(68, 119, 164);
+    margin-top: 14px;
+    margin-left: 14px;
+    width: 250px;
+    font-size: 56px;
+    font-family: Impact, fantasy;
+    text-align: center;
+}
+
+.hmebtn{
+
+    flex: 1PX;
+    text-align: right;
+
+}
+
+li{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(68, 119, 164);
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+hr.new1{
+    border: px rgb(68, 119, 164);
+}
+
+.img1{
+    width:300px;
+    height:300px}
+
+p{
+    margin-left:120px;
+    color: rgb(68, 119, 164);
+}
+
+h3{
+    color: rgb(94, 94, 153);
+}
+

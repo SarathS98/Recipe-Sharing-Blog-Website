@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Joinpage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'cssfiles/styleprosec.css' %}">
+    <link rel="stylesheet" href="{% static 'cssfiles/stylepro.css' %}">
+</head>
+<body class="bo">
+    
+    <div class="lgin">
+        <div class="logo">
+            BiteBliss
+        </div>
+        <div class="hmebtn">
+            <ul>
+                <li><a href="{% url 'hmepg' %}">HOME</a></li>
+                <li><a href="{% url 'abtpg' %}">ABOUT US</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <center>
+    <div class="brdr">
+        <div class="nme">
+            JoinNOW
+        </div>
+        <form method="post" action="">
+          {% csrf_token %}
+            <div class="lgn">
+                <div class="inst">
+                   
+                    <input type="text" id="usrnme" name="usrnme" placeholder="USERNAME" class="inst"><br><br>
+                    <input type="email" id="eml" name="eml" placeholder="email" class="inst"><br><br>
+                    <input type="password" id="pswrd" name="pswrd" placeholder="PASSWORD" class="inst"><br>
+                </div>
+                <div class="sub1">
+                    <input type="submit" value="Register" class="sub">
+                </div>    
+            </div> 
+        </form>
+    </div>
+    
+    </center>
+    
+    
+
+       
+ 
+    
+</body>
+</html>

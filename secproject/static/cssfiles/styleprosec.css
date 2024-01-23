@@ -1,0 +1,102 @@
+.bo{
+    background-color: rgb(222, 217, 217);
+}
+
+.logo
+{
+    color: rgb(230, 235, 83);
+    background-color: rgb(68, 119, 164);
+    margin-top: 80px;
+    width: 250px;
+    font-size: 56px;
+    font-family: Impact, fantasy;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.brdr{
+    margin-top: 80px;
+    border: 2px solid;
+    width: 350px;
+    height: 270px;
+    border-color: rgb(168, 168, 166) ;
+}
+
+.nme{
+    margin-top: 20px;
+    color: rgb(68, 119, 164);
+    font-family: Impact, fantasy;
+    font-size: 30px;
+}
+
+
+
+.inst{
+    width: 200px;
+    height: 20px;
+    font-size:70%;
+    border: 0px;
+}
+
+.lgn{
+    margin-top: 20px;
+}
+
+hr.new1{
+    border: px rgb(68, 119, 164);
+    margin-top: 40px;
+}
+
+.abou{
+    margin-left: 30PX;
+    margin-top: 40px;
+    color: rgb(68, 119, 164);
+    font-family: Impact, fantasy;
+    font-size: 30px;
+}
+
+.desc{
+    margin-left: 30PX;
+    margin-top: 40px;
+    font-size: 30px;
+    color: rgb(70, 70, 63);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lgin{
+    align-items: center;
+    display: flex
+    
+}
+
+.logo1{
+    color: rgb(230, 235, 83);
+    background-color: rgb(68, 119, 164);
+    width: 250px;
+    font-size: 56px;
+    font-family: Impact, fantasy;
+    margin-top: 30px;
+    margin-left: 80px;
+    text-align: center;
+}
+
+.hmebtn{
+    
+    flex: 1PX;
+    text-align: right;
+    
+}
+
+li{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(68, 119, 164);
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
